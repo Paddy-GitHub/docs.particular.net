@@ -4,7 +4,7 @@ using NServiceBus;
 
 namespace AsyncPagesMVC.Controllers
 {
-    public class SendAsyncController : AsyncController
+    public class SendAsyncController : Controller
     {
         IBus bus;
 
@@ -21,7 +21,6 @@ namespace AsyncPagesMVC.Controllers
         }
 
         [HttpPost]
-        [AsyncTimeout(50000)]
         public void IndexAsync(string textField)
         {
             int number;
