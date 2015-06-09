@@ -7,12 +7,130 @@
       "Microsoft.AspNet.Diagnostics >= 1.0.0-beta4",
       "Microsoft.AspNet.Mvc >= 6.0.0-beta4",
       "Microsoft.AspNet.Server.IIS >= 1.0.0-beta4",
-      "Microsoft.AspNet.Server.WebListener >= 1.0.0-beta4"
+      "Microsoft.AspNet.Server.WebListener >= 1.0.0-beta4",
+      "NServiceBus.Autofac >= 5.0.0",
+      "NServiceBus >= 5.2.0",
+      "Autofac.Dnx >= 4.0.0-alpha2"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []
   },
   "libraries": {
+    "Autofac/4.0.0-alpha2": {
+      "serviceable": false,
+      "sha": "nlKsjAyDK827ARwrQL54bq80NcadZTKas7vqJfc/ZEqgmMFlTOESvHKy97Ny7IGChAW98qJZQ7Wlmp5xDVUbnw==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [
+            "mscorlib",
+            "System",
+            "System.Core",
+            "Microsoft.CSharp"
+          ],
+          "runtimeAssemblies": [
+            "lib/dnx451/Autofac.dll"
+          ],
+          "compileAssemblies": [
+            "lib/dnx451/Autofac.dll"
+          ]
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {
+            "System.Collections": "4.0.10-beta-22816",
+            "System.Collections.Concurrent": "4.0.10-beta-22816",
+            "System.ComponentModel": "4.0.0-beta-22816",
+            "System.Diagnostics.Contracts": "4.0.0-beta-22816",
+            "System.Diagnostics.Debug": "4.0.10-beta-22816",
+            "System.Diagnostics.Tools": "4.0.0-beta-22816",
+            "System.Globalization": "4.0.10-beta-22816",
+            "System.Linq": "4.0.0-beta-22816",
+            "System.Linq.Expressions": "4.0.10-beta-22816",
+            "System.Reflection": "4.0.10-beta-22816",
+            "System.Reflection.Extensions": "4.0.0-beta-22816",
+            "System.Reflection.TypeExtensions": "4.0.0-beta-22816",
+            "System.Resources.ResourceManager": "4.0.0-beta-22816",
+            "System.Runtime": "4.0.20-beta-22816",
+            "System.Threading.Thread": "4.0.0-beta-22816",
+            "System.Threading": "4.0.10-beta-22816",
+            "System.Threading.Tasks": "4.0.10-beta-22816"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/dnxcore50/Autofac.dll"
+          ],
+          "compileAssemblies": [
+            "lib/dnxcore50/Autofac.dll"
+          ]
+        }
+      },
+      "files": [
+        "Autofac.4.0.0-alpha2.nupkg",
+        "Autofac.4.0.0-alpha2.nupkg.sha512",
+        "Autofac.nuspec",
+        "lib/dnx451/Autofac.dll",
+        "lib/dnx451/Autofac.xml",
+        "lib/dnxcore50/Autofac.dll",
+        "lib/dnxcore50/Autofac.xml",
+        "lib/portable-net45+win+wpa81+wp80/Autofac.dll",
+        "lib/portable-net45+win+wpa81+wp80/Autofac.xml"
+      ]
+    },
+    "Autofac.Dnx/4.0.0-alpha2": {
+      "serviceable": false,
+      "sha": "hoIz85pQO6UeY9zsvINtoJIyTCw0/GJkbdZSpouIkk/O9vpeLB1CD9JZii/4hmdUBuKvjaeKpl6V5K1EGKKX1A==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "Autofac": "4.0.0-alpha2",
+            "Microsoft.Framework.DependencyInjection": "1.0.0-beta4"
+          },
+          "frameworkAssemblies": [
+            "mscorlib",
+            "System",
+            "System.Core",
+            "Microsoft.CSharp"
+          ],
+          "runtimeAssemblies": [
+            "lib/dnx451/Autofac.dll",
+            "lib/dnx451/Autofac.Dnx.dll"
+          ],
+          "compileAssemblies": [
+            "lib/dnx451/Autofac.dll",
+            "lib/dnx451/Autofac.Dnx.dll"
+          ]
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {
+            "Autofac": "4.0.0-alpha2",
+            "Microsoft.Framework.DependencyInjection": "1.0.0-beta4",
+            "System.Runtime": "4.0.20-beta-22816"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/dnxcore50/Autofac.dll",
+            "lib/dnxcore50/Autofac.Dnx.dll"
+          ],
+          "compileAssemblies": [
+            "lib/dnxcore50/Autofac.dll",
+            "lib/dnxcore50/Autofac.Dnx.dll"
+          ]
+        }
+      },
+      "files": [
+        "Autofac.Dnx.4.0.0-alpha2.nupkg",
+        "Autofac.Dnx.4.0.0-alpha2.nupkg.sha512",
+        "Autofac.Dnx.nuspec",
+        "lib/dnx451/Autofac.dll",
+        "lib/dnx451/Autofac.Dnx.dll",
+        "lib/dnx451/Autofac.Dnx.xml",
+        "lib/dnx451/Autofac.xml",
+        "lib/dnxcore50/Autofac.dll",
+        "lib/dnxcore50/Autofac.Dnx.dll",
+        "lib/dnxcore50/Autofac.Dnx.xml",
+        "lib/dnxcore50/Autofac.xml"
+      ]
+    },
     "Kestrel/1.0.0-beta4": {
       "serviceable": false,
       "sha": "8f2aCgtDh5ONWS7K2EYy23s3nnPvZS7rPimYHJ1DAvF7HG5GSmSC+SkKx6ZtBOjhU9agneWjDwj5jGjdPWfjsA==",
@@ -3046,6 +3164,78 @@
         "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.xml",
         "tools/install.ps1"
+      ]
+    },
+    "NServiceBus/5.2.0": {
+      "serviceable": false,
+      "sha": "2Hx4r0wXqizhJO9J/USAldYuMt2wuMjSc+BXIJTwE5e6T8tKd+q6IxsMHOhe3racjPYgmGgCB+prX7NT9S6aBg==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [
+            "System",
+            "System.Core"
+          ],
+          "runtimeAssemblies": [
+            "lib/net45/NServiceBus.Core.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net45/NServiceBus.Core.dll"
+          ]
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        }
+      },
+      "files": [
+        "NServiceBus.5.2.0.nupkg",
+        "NServiceBus.5.2.0.nupkg.sha512",
+        "NServiceBus.nuspec",
+        "lib/net45/NServiceBus.Core.dll",
+        "lib/net45/NServiceBus.Core.pdb",
+        "lib/net45/NServiceBus.Core.xml",
+        "tools/about_NServiceBus.help.txt",
+        "tools/init.ps1",
+        "tools/NServiceBus.PowerShell.Development.dll"
+      ]
+    },
+    "NServiceBus.Autofac/5.0.0": {
+      "serviceable": false,
+      "sha": "2Qkos6MaY9EG9DBicwRuvPYPVMQhUGELSGcCULJUt0lbv5Vx5E/wLuPeKI6ueh0bRQMDYUhMBMppHoLMLFMylw==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "NServiceBus": "[5.0.0, 6.0.0)",
+            "Autofac": "[3.5.2, 4.0.0)"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net45/NServiceBus.ObjectBuilder.Autofac.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net45/NServiceBus.ObjectBuilder.Autofac.dll"
+          ]
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {
+            "NServiceBus": "[5.0.0, 6.0.0)",
+            "Autofac": "[3.5.2, 4.0.0)"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        }
+      },
+      "files": [
+        "NServiceBus.Autofac.5.0.0.nupkg",
+        "NServiceBus.Autofac.5.0.0.nupkg.sha512",
+        "NServiceBus.Autofac.nuspec",
+        "lib/net45/NServiceBus.ObjectBuilder.Autofac.dll",
+        "lib/net45/NServiceBus.ObjectBuilder.Autofac.pdb",
+        "lib/net45/NServiceBus.ObjectBuilder.Autofac.xml"
       ]
     },
     "System.Collections/4.0.10-beta-22816": {
