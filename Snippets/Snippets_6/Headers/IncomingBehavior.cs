@@ -1,4 +1,6 @@
-﻿namespace Snippets6.Headers
+﻿using NServiceBus.Pipeline;
+
+namespace Snippets6.Headers
 {
     using System;
     using System.Collections.Generic;
@@ -9,7 +11,7 @@
     {
         public override void Invoke(Context context, Action next)
         {
-            Dictionary<string, string> headers = context.PhysicalMessage.Headers;
+            Dictionary<string, string> headers = context.GetPhysicalMessage().Headers;
             string nsbVersion = headers[Headers.NServiceBusVersion];
             string customHeader = headers["MyCustomHeader"];
             next();
