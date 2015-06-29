@@ -6,6 +6,8 @@ class Program
 {
     static void Main()
     {
+        Console.Title = "HeadQuarters";
+
         BusConfiguration busConfiguration = new BusConfiguration();
         busConfiguration.EndpointName("Samples.Gateway.Headquarters");
         busConfiguration.EnableInstallers();
@@ -22,11 +24,11 @@ class Program
                                         "RemoteSite"
                                     };
                 PriceUpdated priceUpdated = new PriceUpdated
-                                            {
-                                                ProductId = 2,
-                                                NewPrice = 100.0,
-                                                ValidFrom = DateTime.Today,
-                                            };
+                {
+                    ProductId = 2,
+                    NewPrice = 100.0,
+                    ValidFrom = DateTime.Today,
+                };
                 bus.SendToSites(siteKeys, priceUpdated);
 
                 Console.WriteLine("Message sent, check the output in RemoteSite");
