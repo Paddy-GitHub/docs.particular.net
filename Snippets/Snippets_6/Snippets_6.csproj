@@ -34,6 +34,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NServiceBus.6.0.0-unstable0451\lib\net45\NServiceBus.Core.dll</HintPath>
     </Reference>
+    <Reference Include="NServiceBus.Host">
+      <HintPath>..\packages\NServiceBus.Host.6.0.0\lib\net45\NServiceBus.Host.exe</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -95,6 +98,7 @@
     <Compile Include="MsmqMessageLabel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="Audit\App.config" />
     <None Include="Errors\ErrorQueue\configureErrorQueue.config" />
     <None Include="Errors\FirstLevel\flr.config" />
@@ -111,4 +115,8 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProjectDir)$(OutputPath)NServiceBus.Host.exe</StartProgram>
+  </PropertyGroup>
 </Project>
