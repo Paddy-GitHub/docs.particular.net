@@ -70,6 +70,10 @@
     <Compile Include="Headers\WriteHandler.cs" />
     <Compile Include="Headers\SomeOtherMessage.cs" />
     <Compile Include="Headers\StaticHeaders.cs" />
+    <Compile Include="Routing\BasicOperations.cs" />
+    <Compile Include="Routing\EndpointMapping\ConfigurationSource\ConfigurationSource.cs" />
+    <Compile Include="Routing\EndpointMapping\ConfigurationSource\Usage.cs" />
+    <Compile Include="Routing\EndpointMapping\ProvideConfiguration.cs" />
     <Compile Include="Sagas\FindByExpression\Message1.cs" />
     <Compile Include="Sagas\FindByExpression\Message2.cs" />
     <Compile Include="Sagas\FindByExpression\MySaga.cs" />
@@ -96,6 +100,7 @@
     <Compile Include="Sagas\Timeouts\TiredOfWaitingForMessage2.cs" />
     <Compile Include="Scanning\ScanningPublicApi.cs" />
     <Compile Include="MsmqMessageLabel.cs" />
+    <Compile Include="Routing\AutomaticSubscriptions\AutoSubscribeSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -103,6 +108,7 @@
     <None Include="Errors\ErrorQueue\configureErrorQueue.config" />
     <None Include="Errors\FirstLevel\flr.config" />
     <None Include="packages.config" />
+    <None Include="Routing\EndpointMapping\ConfigureEndpointMapping.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
