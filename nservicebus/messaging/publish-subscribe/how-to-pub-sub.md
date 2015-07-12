@@ -31,7 +31,7 @@ If your selected transport doesn't natively supports pub/sub you need to specify
 
 #### Exclude sagas from auto subscribe
 
-Before V5 events that where only handled by sagas where not subscribed to by default. You can opt-in to the old behavior using:
+Before V4 events that where only handled by sagas where not subscribed to by default. You can opt-in to the old behavior using:
 
 <!-- import DoNotAutoSubscribeSagas -->
 
@@ -52,4 +52,3 @@ You can also choose to **not** have the infrastructure automatically subscribe u
 To manually subscribe and unsubscribe from a message:
 
 <!-- import ExplicitSubscribe -->
-
