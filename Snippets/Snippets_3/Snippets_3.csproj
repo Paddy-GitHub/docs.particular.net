@@ -92,7 +92,7 @@
     <None Include="Encryption\Configuration\encryption.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="EndpointMapping\ConfigureEndpointMapping.config" />
+    <None Include="Routing\EndpointMapping\ConfigureEndpointMapping.config" />
     <None Include="Errors\ErrorQueue\ConfigureErrorQueue.config" />
     <None Include="Errors\FirstLevel\flr.config" />
     <None Include="Monitoring\app.config" />
@@ -133,9 +133,9 @@
     <Compile Include="Encryption\EncryptionService\Usage.cs" />
     <Compile Include="Encryption\Usage.cs" />
     <Compile Include="Encryption\WireEncryptedProperty\MyMessage.cs" />
-    <Compile Include="EndpointMapping\ConfigurationSource\ConfigurationSource.cs" />
-    <Compile Include="EndpointMapping\ProvideConfiguration.cs" />
-    <Compile Include="EndpointMapping\ConfigurationSource\Usage.cs" />
+    <Compile Include="Routing\EndpointMapping\ConfigurationSource\ConfigurationSource.cs" />
+    <Compile Include="Routing\EndpointMapping\ProvideConfiguration.cs" />
+    <Compile Include="Routing\EndpointMapping\ConfigurationSource\Usage.cs" />
     <Compile Include="EndpointName\EndpointConfigByNamespace.cs" />
     <Compile Include="EndpointName\EndpointConfigWithAttribute.cs" />
     <Compile Include="EndpointName\Usage.cs" />
@@ -168,6 +168,7 @@
     <Compile Include="Persistence\NHibernate\Usage.cs" />
     <Compile Include="Pipeline\Abort\Handler.cs" />
     <Compile Include="Pipeline\Abort\MyMessage.cs" />
+    <Compile Include="Routing\BasicOperations.cs" />
     <Compile Include="Sagas\ConfigureSagaPersistence.cs" />
     <Compile Include="Sagas\SagaNotFoundHandler.cs" />
     <Compile Include="Sagas\SimpleSaga\OrderSagaData.cs" />
